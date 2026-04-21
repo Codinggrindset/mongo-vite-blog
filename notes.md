@@ -70,3 +70,10 @@ Add your environment variables first before deploying. Click the EXAMPLE_NAME fi
 Variable 1:
 Key: JWT_SECRET
 Value: your-super-secret-key-change-this
+
+Click Add More then:
+Variable 2:
+Key: DATABASE_URL
+Value: your mongo dababase url
+
+Deploy
