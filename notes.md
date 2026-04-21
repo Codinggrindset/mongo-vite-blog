@@ -43,3 +43,30 @@ npm run dev in both frontend and backend to run
 You canot deploy mongodb on neon, dont even try. You dont need to
 
 Just deploy frontend and backend to vercel
+
+Create a root vercel.json
+In your root prodify/ folder (not inside backend or frontend), create a file called vercel.json and paste exactly what Vercel is showing you:
+{
+  "experimentalServices": {
+    "frontend": {
+      "entrypoint": "frontend",
+      "routePrefix": "/",
+      "framework": "vite"
+    },
+    "backend": {
+      "entrypoint": "backend",
+      "routePrefix": "/_/backend"
+    }
+  }
+}
+
+Push to GitHub
+git add .
+git commit -m "add vercel.json"
+git push
+
+
+Add your environment variables first before deploying. Click the EXAMPLE_NAME field and add these two:
+Variable 1:
+Key: JWT_SECRET
+Value: your-super-secret-key-change-this
