@@ -38,3 +38,8 @@ datasource db {
 
 
 npm run dev in both frontend and backend to run
+
+
+You canot deploy mongodb on neon, dont even try. You dont need to
+
+Just deploy frontend and backend to vercel
